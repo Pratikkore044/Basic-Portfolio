@@ -1,0 +1,177 @@
+body{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 8px;
+    padding: 16px;
+    font-family: "Roboto", sans-serif;
+    background-color: #DCDCDC;
+}
+
+.hero{
+    display: flex;
+    height: auto;
+    width: 888px;
+    padding: 16px;
+    background-color:#FFFFFF;
+    border-radius: 7px;
+}
+
+.hero-img{
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+
+}
+.hero_content{
+    padding-left: 12px;
+}
+
+.hero-h1{
+    margin-bottom: 0%;
+}
+
+.hero-p{
+    margin-top: 4px;
+    font-weight: 300;
+}
+.contact-links {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+.contact-links > a {
+  text-decoration: none;
+}
+
+.contact-links > a:first-child:before {
+  content: '' !important;
+}
+
+.contact-links > a:nth-child(n):before {
+  content: '·';
+}
+
+.experience-section{
+    width: 888px;
+    height: auto;
+    padding: 16px;
+    margin-top: 16px;
+    background-color:#FFFFFF;
+    border-radius: 7px;
+}
+
+
+.experience-box {
+  display: flex;
+  gap: 1rem;
+}
+
+ .company-logo {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  object-fit:fill;
+  aspect-ratio: 1 / 1;
+}
+
+.experience-content h4,h5,p{
+    margin: 0%;
+}
+
+.experience-content h4{
+    font-size: 16px;
+}
+
+.experience-content h5{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.experience-content p{
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.experience-summary-item{
+    padding: 1px;
+    font-size: 14px;
+    gap: 10px;
+    padding-bottom: 18px;
+}
+
+
+.secondary-content{
+    background-color: #FFFFFF;
+    flex-grow: 1;
+    border-radius: 7px;
+    margin-left: 14px;
+    padding: 14px;
+}
+
+.secondary-content-section h4{
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+}
+
+.secondary-content-section ul{
+    margin-top: 2px;
+}
+
+@media (max-width: 678px) {
+  body {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-img{
+      height: 128px;
+      width: 128px;
+      margin-bottom: 1rem;
+    border-radius: 50%;
+  }
+  .hero_content h1 {
+    font-size: 1.5rem;
+  }
+
+  .experience-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .company-logo {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .experience-summary {
+    padding: 0.5rem;
+  }
+
+  .experience-summary-item {
+    font-size: 0.9rem;
+    padding: 0.25rem;
+  }
+
+ .main-content,
+  .secondary-content {
+    padding: 0.75rem;
+    width:auto;
+    height: auto;
+  }
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secondary-content{
+    margin-right: 13px;
+  }
+}
